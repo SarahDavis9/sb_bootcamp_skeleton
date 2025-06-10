@@ -2,7 +2,7 @@ from standardbots import models, StandardBotsRobot
 
 # Simon:
 sdk = StandardBotsRobot(
-    url='http://129.101.98.221:3000',
+    url='http://172.23.255.53:3000',
     token='xjis-b8j7nxag-2jk4rs-7i3g65g',
     robot_kind=StandardBotsRobot.RobotKind.Live
     )

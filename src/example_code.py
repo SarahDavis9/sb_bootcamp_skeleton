@@ -4,7 +4,7 @@ def main():
     # This is where you will write your code to move the robot!
     
     # Move the robot using cartesian coordinates
-    position, orientation = sb.get_joint_position()
+    position, orientation = sb.get_cartesian_position()
     print(f"Cartesian Position: {position}, Orientation: {orientation}")
 
     # Move the robot using joint rotations
