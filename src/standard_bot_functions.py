@@ -67,17 +67,17 @@ def move_joint(j1, j2, j3, j4, j5, j6):
 #########################
 # Gripper Sample - OPEN
 #########################
-def open_gripper():
+def open_gripper(width=0.11, force=10.0):
     with sdk.connection():
         gripper_command = models.GripperCommandRequest(
             kind=models.GripperKindEnum.Onrobot2Fg14,
             onrobot_2fg14=models.OnRobot2FG14GripperCommandRequest(
                 grip_direction=models.LinearGripDirectionEnum.Outward,
                 target_grip_width=models.LinearUnit(
-                    value=0.11, unit_kind=models.LinearUnitKind.Meters
+                    value=width, unit_kind=models.LinearUnitKind.Meters
                 ),
                 target_force=models.ForceUnit(
-                    value=10.0,
+                    value=force,
                     unit_kind=models.ForceUnitKind.Newtons,
                 ),
                 control_kind=models.OnRobot2FG14ControlKindEnum.Move,
@@ -89,17 +89,17 @@ def open_gripper():
 #########################
 # Gripper Sample - CLOSE
 #########################
-def close_gripper():
+def close_gripper(width=0.07, force=10.0):
     with sdk.connection():
         gripper_command = models.GripperCommandRequest(
             kind=models.GripperKindEnum.Onrobot2Fg14,
             onrobot_2fg14=models.OnRobot2FG14GripperCommandRequest(
                 grip_direction=models.LinearGripDirectionEnum.Outward,
                 target_grip_width=models.LinearUnit(
-                    value=0.07, unit_kind=models.LinearUnitKind.Meters
+                    value=width, unit_kind=models.LinearUnitKind.Meters
                 ),
                 target_force=models.ForceUnit(
-                    value=10.0,
+                    value=force,
                     unit_kind=models.ForceUnitKind.Newtons,
                 ),
                 control_kind=models.OnRobot2FG14ControlKindEnum.Move,
