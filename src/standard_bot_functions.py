@@ -89,7 +89,7 @@ def open_gripper(width=0.11, force=10.0):
 #########################
 # Gripper Sample - CLOSE
 #########################
-def close_gripper(width=0.07, force=10.0):
+def close_gripper(width=0.09, force=10.0):
     with sdk.connection():
         gripper_command = models.GripperCommandRequest(
             kind=models.GripperKindEnum.Onrobot2Fg14,
