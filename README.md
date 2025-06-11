@@ -32,11 +32,11 @@ py -m venv .venv
 #### Activate python virtual environment:
 Linux/maxOS
 ```bash
-source ./venv/bin/activate
+source .venv/bin/activate
 ```
 Windows:
 ```bash
-.\venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 #### Install `pycomm3`:
