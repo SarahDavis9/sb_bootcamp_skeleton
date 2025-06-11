@@ -3,7 +3,7 @@ from standardbots import models
 
 def main():
 
-    # Create positions
+    # Create positions and orientations
     position_1 = models.Position(unit_kind=models.LinearUnitKind.Meters, x=0.428, y=0.168, z=0.506)
     orientation_1 = models.Orientation(kind=models.OrientationKindEnum.Quaternion, quaternion=models.Quaternion(0.002, 0.713, 0.013, 0.701))
     position_2 = models.Position(unit_kind=models.LinearUnitKind.Meters, x=0.428, y=-0.110, z=0.265)
