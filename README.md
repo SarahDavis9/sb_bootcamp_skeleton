@@ -39,25 +39,6 @@ Windows:
 .venv\Scripts\activate
 ```
 
-#### Install `pycomm3`:
-Linux/macOS:
-```bash
-pip3 install pycomm3
-```
-or
-```bash
-python3 -m pip install pycomm3
-```
-
-Windows:
-```bash
-pip install pycomm3
-```
-or
-```bash
-py -m pip install pycomm3
-```
-
 #### Install Standard Bot Library
 
 Linux/macOS:
